@@ -1,0 +1,170 @@
+.background-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.floating-element {
+    position: absolute;
+    opacity: 0.1;
+}
+
+.element-1 {
+    top: 10%;
+    left: 5%;
+    animation: float 20s ease-in-out infinite;
+}
+
+.element-2 {
+    top: 60%;
+    right: 5%;
+    animation: float 25s ease-in-out infinite reverse;
+}
+
+.element-3 {
+    bottom: 10%;
+    left: 15%;
+    animation: float 22s ease-in-out infinite;
+}
+
+.element-4 {
+    top: 30%;
+    right: 15%;
+    animation: floatReverse 28s ease-in-out infinite;
+}
+
+.glow-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(20px, 20px) rotate(5deg);
+    }
+    50% {
+        transform: translate(-10px, 40px) rotate(-5deg);
+    }
+    75% {
+        transform: translate(-30px, 20px) rotate(3deg);
+    }
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-20px, -20px) rotate(-5deg);
+    }
+    50% {
+        transform: translate(10px, -40px) rotate(5deg);
+    }
+    75% {
+        transform: translate(30px, -20px) rotate(-3deg);
+    }
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-item:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 2rem 1rem 1rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-item:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Decorative Elements */
+.corner-accent {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(135deg);
+}
+
+/* Glowing dots */
+.glowing-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-color);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}

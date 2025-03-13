@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="110" fill="none" viewBox="-30 0 250 110">
+  <g clip-path="url(#clip)">
+    
+    <!-- Candlestick 1 -->
+    <rect x="40" y="100" width="12" height="0" rx="7.5" fill="#00bfff">
+      <animate attributeName="height" from="0" to="60" dur="1.5s" begin="0s" repeatCount="indefinite"
+        values="0; 60; 0" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      <animate attributeName="y" from="100" to="40" dur="1.5s" begin="0s" repeatCount="indefinite"
+        values="100; 40; 100" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </rect>
+
+    <!-- Candlestick 2 -->
+    <rect x="70" y="100" width="12" height="0" rx="7.5" fill="#0088ff">
+      <animate attributeName="height" from="0" to="70" dur="1.5s" begin="0.2s" repeatCount="indefinite"
+        values="0; 70; 0" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      <animate attributeName="y" from="100" to="30" dur="1.5s" begin="0.2s" repeatCount="indefinite"
+        values="100; 30; 100" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </rect>
+
+    <!-- Candlestick 3 -->
+    <rect x="100" y="100" width="12" height="0" rx="7.5" fill="#00bfff">
+      <animate attributeName="height" from="0" to="80" dur="1.5s" begin="0.4s" repeatCount="indefinite"
+        values="0; 80; 0" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      <animate attributeName="y" from="100" to="20" dur="1.5s" begin="0.4s" repeatCount="indefinite"
+        values="100; 20; 100" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </rect>
+
+    <!-- Candlestick 4 -->
+    <rect x="130" y="100" width="12" height="0" rx="7.5" fill="#0088ff">
+      <animate attributeName="height" from="0" to="90" dur="1.5s" begin="0.6s" repeatCount="indefinite"
+        values="0; 90; 0" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      <animate attributeName="y" from="100" to="10" dur="1.5s" begin="0.6s" repeatCount="indefinite"
+        values="100; 10; 100" keyTimes="0; 0.5; 1" calcMode="spline"
+        keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </rect>
+
+  </g>
+  
+  <defs>
+    <clipPath id="clip">
+      <rect width="250" height="110" rx="12"/>
+    </clipPath>
+  </defs>
+</svg>

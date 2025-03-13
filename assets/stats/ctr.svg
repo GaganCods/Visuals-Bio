@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="100" fill="none">
+  <!-- Outer Rectangle (Static Thumbnail) -->
+  <rect width="143" height="99.941" fill="#1B1B1B" rx="12" />
+  <rect width="142" height="98.941" x=".5" y=".5" stroke="#fff" stroke-opacity=".05" rx="11.5" />
+
+  <!-- Inner Container (Shimmer Loading Effect) -->
+  <rect width="130.323" height="68.045" x="6.592" y="5.848" fill="url(#shimmer)" rx="8" />
+
+  <!-- Define Shimmer Gradients -->
+  <defs>
+    <!-- Small Elements Loading Effect -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2A2A2A" />
+      <stop offset="50%" stop-color="#3A3A3A" />
+      <stop offset="100%" stop-color="#2A2A2A" />
+      <animate attributeName="x1" values="-100%; 200%" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%; 300%" dur="1.5s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Animated Blue Gradient for Circle -->
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00aeff">
+        <animate attributeName="stop-color" values="#00aeff; #0084ff; #00aeff" dur="2s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0084ff">
+        <animate attributeName="stop-color" values="#0084ff; #00aeff; #0084ff" dur="2s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Circle (Now with Animated Gradient) -->
+  <circle cx="15" cy="85" r="6.5" fill="url(#circleGradient)" />
+
+  <!-- Horizontal Rectangles (Text Skeleton) -->
+  <rect width="28" height="2" x="28" y="79" fill="url(#circleGradient)" rx="0.8" />
+  <rect width="33" height="2" x="28" y="83" fill="url(#circleGradient)" rx="0.8" />
+  <rect width="65" height="1.595" x="28" y="88" fill="url(#shimmer)" rx="0.8" />
+  <rect width="75" height="1.595" x="28" y="92" fill="url(#shimmer)" rx="0.8" />
+</svg>

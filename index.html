@@ -3,305 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gagan Visuals - Portfolio</title>
-    <meta name="description" content="Professional graphic design services specializing in YouTube thumbnails and social media posts by Gagan">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gagan Visuals - Profile</title>
+
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+     <link rel="manifest" href="assets/favicon/site.webmanifest">
+     <meta name="theme-color" content="#0184ff">
+     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,700&display=swap" rel="stylesheet">
-    <!-- Add Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-    <header class="header">
-        <nav class="nav-container">
-            <a href="#home" class="logo">
-                <img src="assets/nav-logo.png" alt="Gagan Visuals Logo" class="nav-logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="#contact" class="cta-button">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            
-            <div class="hero-vectors">
-                <svg class="background-circles" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                    <circle class="circle-1" cx="50" cy="50" r="45"/>
-                    <circle class="circle-2" cx="50" cy="50" r="35"/>
-                    <circle class="circle-3" cx="50" cy="50" r="25"/>
-                </svg>
-               
-            </div>
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="assets/logo.webp" alt="Profile" class="profile-pic">
+    <div class="container">
+        <header class="profile-header">
+            <img src="assets/profile.jpg" alt="Gagan" class="profile-pic">
+            <div class="profile-info">
+                <div class="profile-header-top">
+                    <h1>Gagan Visuals</h1>
+                    <button class="share-dots-btn profile-share-btn" data-url="https://gaganpratap.vercel.app/">
+                        <img src="assets/three-dots.svg" alt="Share">
+                    </button>
                 </div>
-                <h1>Hi, I'm <span class="highlight">Gagan</span></h1>
-                <p class="tagline">I create thumbnails and<br>banners for youtube</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="primary-button">Get in touch</a>
+                <p>Let's have a quick chat about your design career.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="assets/youtube.svg" alt="YouTube" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/behance.svg" alt="Behance" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/twitter.svg" alt="Twitter" width="20"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="important-links-button">
+            <a href="links.html" class="view-links-btn">View Important Links →</a>
+        </div>
+
+        <section class="sales-packs">
+            <h2>Special Offers! 🔥</h2>
+            <div class="pack-cards">
+                <div class="pack-card">
+                    <div class="pack-badge hot-deal">LIMITED TIME OFFER</div>
+                    <img src="assets/thumbnail-pack.jpg" alt="Thumbnail Design Bundle" class="pack-cover">
+                    <h3>Ultimate Thumbnail Design Bundle</h3>
+                    <p class="pack-description">All the assets I use in my thumbnail designs. <br>Perfect for YouTubers/Designers!</p>
+                    <ul class="pack-features">
+                        <li>✓ Premium Font Collection</li>
+                        <li>✓ Special Effects & Overlays</li>
+                        <li>✓ High-Quality PNG Elements</li>
+                        <li>✓ More Premium Assets</li>
+                    </ul>
+                    <div class="pack-pricing">
+                        <span class="original-price">₹799</span>
+                        <span class="sale-price">₹399</span>
+                    </div>
+                    <a href="#" class="buy-btn">🎨 Grab it Now! ⚡</a>
+                </div>
+
+                <div class="pack-card">
+                    <div class="pack-badge hot-deal">NEW PACK</div>
+                    <img src="assets/video-bg-pack.jpg" alt="Video Backgrounds Pack" class="pack-cover">
+                    <h3>Video Editing Backgrounds Pack</h3>
+                    <p class="pack-description">Premium collection of video backgrounds. <br>Perfect for your videos!</p>
+                    <ul class="pack-features">
+                        <li>✓ 50+ Motion Backgrounds</li>
+                        <li>✓ 4K Resolution Files</li>
+                        <li>✓ Seamless Loops</li>
+                        <li>✓ Custom Transitions</li>
+                       
+                    </ul>
+                    <div class="pack-pricing">
+                        <span class="original-price">₹599</span>
+                        <span class="sale-price">₹299</span>
+                    </div>
+                    <a href="#" class="buy-btn">🎬 Get the Pack! 🌟</a>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="work-section">
-            <div class="section-header">
-                <span class="tag">[ WORK ]</span>
-                <h2>Delivering <span class="highlight">Extraordinary</span> Designs Every Single Time.</h2>
-            </div>
-            <!-- First Row Carousel -->
-            <div class="swiper work-carousel-top">
-                <div class="swiper-wrapper">
-                    <!-- Slides will be added dynamically -->
-                </div>
-            </div>
-
-            <!-- Second Row Carousel -->
-            <div class="swiper work-carousel-bottom">
-                <div class="swiper-wrapper">
-                    <!-- Slides will be added dynamically -->
-                </div>
-            </div>
-
-            <!-- Third Row Carousel -->
-            <div class="swiper work-carousel-last">
-                <div class="swiper-wrapper">
-                    <!-- Slides will be added dynamically -->
-                </div>
-            </div>
-        </section>
-
-        <section id="stats" class="stats-section">
-            <h2>Why <span class="highlight">Choose</span> Me</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <img src="assets/stats/views.svg" alt="Views icon" width="48" height="48">
-                    <h3>10M+ Views</h3>
-                    <p>Generated for clients</p>
-                </div>
-                <div class="stat-card">
-                    <img src="assets/stats/ctr.svg" alt="CTR icon" width="48" height="48">
-                    <h3>15% CTR</h3>
-                    <p>Average click rate</p>
-                </div>
-                <div class="stat-card">
-                    <img src="assets/stats/growth.svg" alt="Growth icon" width="48" height="48">
-                    <h3>2x Growth</h3>
-                    <p>Channel acceleration</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials-section">
-            <h2>Trusted By Top <span class="highlight">Creators</span></h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Working with Gagan has been incredible. Our channel's CTR doubled after implementing his thumbnail designs."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="assets/testimonials/creator1.svg" alt="Gaming Creator">
-                        <div class="author-info">
-                            <h4>Alex Gaming</h4>
-                            <p>2M+ Subscribers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The attention to detail and understanding of what works on YouTube is exceptional. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="assets/testimonials/creator2.svg" alt="Tech Creator">
-                        <div class="author-info">
-                            <h4>TechReview Pro</h4>
-                            <p>1.5M+ Subscribers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Gagan's designs helped our educational content stand out. We saw immediate improvement in our click-through rates."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="assets/testimonials/creator3.svg" alt="Educational Creator">
-                        <div class="author-info">
-                            <h4>EduTech Academy</h4>
-                            <p>800K+ Subscribers</p>
-                        </div>
+        <section class="client-meeting">
+            <h2>Client Meeting</h2>
+            <div class="meeting-cards">
+                <div class="meeting-card">
+                    <h3>🤝 15 Min Intro Meeting</h3>
+                    <p>⏱️ 15 mins</p>
+                    <p>💻 Google Meet</p>
+                    <div class="meeting-details">
+                        <span class="price">Free</span>
+                        <a href="schedule.html" class="book-btn">Book Now →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="process" class="process-section">
-            <div class="process-container">
-                <div class="section-header">
-                    <span class="tag">[THE PROCESS]</span>
-                    <h2>How Do I <span class="highlight">Work</span>?</h2>
-                </div>
-
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-content">
-                            <span class="step-tag">Step 1</span>
-                            <h3>Start with a Simple Form</h3>
-                            <p>Fill "Start Simple" and tell me a bit about your channel. Just fill out a quick form with details about your content, goals, and style.</p>
-                            <p class="note">This helps me understand exactly what you need, so I can start creating thumbnails that fit your vision.</p>
-                        </div>
-                        <div class="step-image">
-                            <img src="assets/process/step1.png" alt="Simple Form Preview" class="form-preview">
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-content">
-                            <span class="step-tag">Step 2</span>
-                            <h3>I'll get in touch</h3>
-                            <p>Once I know more about your needs, I'll be in touch to go through and find the best plan for your channel.</p>
-                            <p class="note">Whether you need one thumbnail, social media posts or a complete channel refresh, we'll work together to create the perfect solution to help you achieve your goals.</p>
-                        </div>
-                        <div class="step-image">
-                            <img src="assets/process/step2.png" alt="Thumbnails Preview" class="thumbnails-preview">
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-content">
-                            <span class="step-tag">Step 3</span>
-                            <h3>Let Me Handle the Rest</h3>
-                            <p>Now you can relax while I take care of everything! I'll design content thumbnails & social media posts to match your style, amplify your channel.</p>
-                            <p class="note">Focus on creating amazing content - I've got the visuals covered!</p>
-                            <a href="#contact" class="primary-button">Start The Process</a>
-                        </div>
-                        <div class="step-image">
-                            <img src="assets/process/step3.png" alt="Designer at Work" class="designer-preview">
-                        </div>
-                    </div>
+        <section class="about-me">
+            <img src="assets/profile.jpg" alt="About Gagan" class="about-pic">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm Gagan Pratap, the creative mind behind Gagan Visuals. I specialize in graphic design, video production, and digital art, crafting stunning visuals that bring ideas to life. Let's create something amazing together!</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="assets/youtube.svg" alt="YouTube" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/behance.svg" alt="Behance" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/twitter.svg" alt="Twitter" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/instagram.svg" alt="Instagram" width="20"></a>
                 </div>
             </div>
         </section>
+    </div>
 
-
-        <section id="faq" class="faq-section">
-            <div class="faq-container">
-                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>I Struggle to create engaging thumbnails. How can your service help?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>My thumbnail designs stand out due to our experience and deep understanding of the platform. We focus on the best practices to drive click-through rates with advanced knowledge and understanding of the algorithms of YouTube, ensuring your thumbnails grab attention and deliver outstanding results.</p>
-                        </div>
+    <!-- Share Overlay -->
+    <div class="share-overlay" id="shareOverlay">
+        <div class="share-popup">
+            <button class="close-btn">&times;</button>
+            <h3>Share link</h3>
+            <div class="share-preview">
+                <div class="share-preview-content">
+                    <div class="share-preview-header">
+                        <img class="share-preview-image">
+                        <h4 class="share-preview-title"></h4>
                     </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>What services do you offer for creators?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>I design YouTube thumbnails, Branding, All kinds YouTube Repackaging and Social media Posts.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>I've had issues with designers missing deadlines. How do you ensure timely delivery?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We will make sure that the deadlines are met. With our simple process and clear communication, it's all about staying on track. We will give you regular updates and guarantee that your project will be completed on time.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>What is your process?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>1. We go over a thumbnail strategy<br>2. I research and brainstorm sketches<br>3. We pick the one with the highest likelihood of performance<br>4. Review and Revisions<br>5. The thumbnail is finalized and sent.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Do you offer refunds?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We don't offer refunds since it's a digital product, but we do offer revisions!</p>
-                        </div>
+                    <div class="share-preview-link">
+                        <img src="assets/three-dots.svg" alt="Link" class="share-platform-icon">
+                        <div class="share-url"></div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="schedule" class="schedule-section">
-            <div class="schedule-container">
-                <h2>Schedule a Call<br>With Me</h2>
-                <p>Get ready to start producing stunning, efficient<br>design work without the hassles of hiring.</p>
-                <a href="#contact" class="primary-button">Schedule Now</a>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <h2>Want to<span class="highlight">Work </span>with me?</h2>
-                    <p>Let's discuss your project and create something amazing together.</p>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="primary-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-buttons">
-                <a href="https://www.youtube.com/" target="_blank" class="social-button youtube">
-                    <i class="fab fa-youtube"></i>
-                    <span>YouTube</span>
+            <div class="share-options">
+                <a href="#" class="share-option" id="copyLink">
+                    <img src="assets/copy.svg" alt="Copy" class="share-icon">
+                    <span>Copy</span>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank" class="social-button instagram">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
+                <a href="#" class="share-option" id="shareX" target="_blank">
+                    <img src="assets/x.svg" alt="X" class="share-icon">
+                    <span>X</span>
                 </a>
-                <a href="https://twitter.com/" target="_blank" class="social-button twitter">
-                    <i class="fab fa-x-twitter"></i>
-                    <span>Twitter</span>
+                <a href="#" class="share-option" id="shareFacebook" target="_blank">
+                    <img src="assets/facebook.svg" alt="Facebook" class="share-icon">
+                    <span>Facebook</span>
                 </a>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 Gagan Visuals. All rights reserved.</p>
-                <div class="developer-credit">
-                    <p>Designed & Developed with <span class="heart">♥</span> by <a href="https://instagram.com/gaganvisuals" target="_blank" class="credit-link">Gagan</a></p>
-                </div>
+                <a href="#" class="share-option" id="shareWhatsApp" target="_blank">
+                    <img src="assets/whatsapp.svg" alt="WhatsApp" class="share-icon">
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#" class="share-option" id="shareLinkedIn" target="_blank">
+                    <img src="assets/linkedin-share.svg" alt="LinkedIn" class="share-icon">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="share-option" id="shareMessenger" target="_blank">
+                    <img src="assets/messenger.svg" alt="Messenger" class="share-icon">
+                    <span>Messenger</span>
+                </a>
+                <a href="#" class="share-option" id="shareSnap" target="_blank">
+                    <img src="assets/snapchat.svg" alt="Snapchat" class="share-icon">
+                    <span>Snap</span>
+                </a>
+                <a href="#" class="share-option" id="shareEmail" target="_blank">
+                    <img src="assets/mail.svg" alt="Email" class="share-icon">
+                    <span>Email</span>
+                </a>
+                <a href="#" class="share-option" id="shareMore">
+                    <img src="assets/more.svg" alt="More" class="share-icon">
+                    <span>More</span>
+                </a>
             </div>
         </div>
-    </footer>
-    <!-- Add Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

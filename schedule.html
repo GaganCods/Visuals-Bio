@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan Visuals - Schedule Meeting</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+   <link rel="manifest" href="assets/favicon/site.webmanifest">
+   <meta name="theme-color" content="#0184ff">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <img src="assets/profile.jpg" alt="Gagan" class="profile-pic">
+            <div class="profile-info">
+                <h1>Gagan Visuals</h1>
+                <p>Schedule a meeting with me to discuss your design needs.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="assets/youtube.svg" alt="YouTube" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/behance.svg" alt="Behance" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn" width="20"></a>
+                    <a href="#" target="_blank"><img src="assets/twitter.svg" alt="Twitter" width="20"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="important-links-button">
+            <a href="index.html" class="view-links-btn">← Back to Home</a>
+        </div>
+
+        <section class="schedule-section">
+            <h2>Schedule a Meeting</h2>
+            <div class="schedule-container">
+                <div class="schedule-card">
+                    <div class="schedule-info">
+                        <h3>🤝 15 Min Intro Meeting</h3>
+                        <p>⏱️ Duration: 15 minutes</p>
+                        <p>💻 Platform: Google Meet</p>
+                        <p>📧 Confirmation will be sent to your email</p>
+                        <p>🌐 Timezone: <select id="timezone" class="timezone-select">
+                            <option value="UTC">UTC (GMT+0)</option>
+                            <option value="IST">IST (GMT+5:30)</option>
+                            <option value="EST">EST (GMT-5)</option>
+                            <option value="PST">PST (GMT-8)</option>
+                        </select></p>
+                    </div>
+                    <div class="calendar-section">
+                        <div class="date-picker">
+                            <h4>Select Date</h4>
+                            <div class="calendar-grid">
+                                <!-- Calendar will be populated via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="time-slots">
+                            <h4>Available Time Slots</h4>
+                            <div class="slot-buttons">
+                                <button class="time-slot">09:00 AM</button>
+                                <button class="time-slot">10:00 AM</button>
+                                <button class="time-slot">11:00 AM</button>
+                                <button class="time-slot">02:00 PM</button>
+                                <button class="time-slot">03:00 PM</button>
+                                <button class="time-slot">04:00 PM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-details">
+                        <div class="selected-info">
+                            <p class="selected-date">Selected Date: <span>Choose a date</span></p>
+                            <p class="selected-time">Selected Time: <span>Choose a time slot</span></p>
+                            <div class="email-input-container">
+                                <label for="userEmail">Your Email:</label>
+                                <input type="email" id="userEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="confirm-btn">Confirm Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

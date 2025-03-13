@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan Visuals - Links</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="theme-color" content="#0184ff">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <img src="assets/profile.jpg" alt="Gagan" class="profile-pic">
+            <div class="profile-info">
+                <div class="profile-header-top">
+                    <h1>Gagan Visuals</h1>
+                    <button class="share-dots-btn profile-share-btn" data-url="https://gaganpratap.vercel.app/">
+                        <img src="assets/three-dots.svg" alt="Share">
+                    </button>
+                </div>
+                <p>Let's have a quick chat about your design career.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@gaganvisual" target="_blank"><img src="assets/youtube.svg" alt="YouTube" width="20"></a>
+                    <a href="https://www.behance.net/gaganvisual" target="_blank"><img src="assets/behance.svg" alt="Behance" width="20"></a>
+                    <a href="https://www.linkedin.com/in/gaganvisual" target="_blank"><img src="assets/linkedin.svg" alt="LinkedIn" width="20"></a>
+                    <a href="https://twitter.com/gaganvisual" target="_blank"><img src="assets/twitter.svg" alt="Twitter" width="20"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="important-links-button">
+            <a href="index.html" class="view-links-btn">← Back to Home</a>
+        </div>
+
+        <section class="important-links">
+            <h2>Important Links</h2>
+            <div class="links-container">
+                <div class="link-card" data-image="resources" data-title="Design Resources">
+                    <h3>Design Resources
+                        <button class="share-dots-btn" data-title="Design Resources"><img src="assets/three-dots.svg" alt="Share"></button>
+                    </h3>
+                    <p>Access my curated collection of design resources, tools, and inspiration.</p>
+                    <div class="tags">
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Resources</span>
+                        <span class="tag tag-new">New</span>
+                    </div>
+                    
+                    <a href="https://gaganvisual.com/resources" class="card-link" target="_blank">Explore Resources →</a>
+                </div>
+                <div class="link-card" data-image="course" data-title="Design Course">
+                    <h3>Design Course
+                        <button class="share-dots-btn" data-title="Design Course"><img src="assets/three-dots.svg" alt="Share"></button>
+                    </h3>
+                    <p>Join my comprehensive design course to master the fundamentals of graphic design.</p>
+                    <div class="tags">
+                        <span class="tag">Course</span>
+                        <span class="tag">Learning</span>
+                        <span class="tag tag-important">Important</span>
+                    </div>
+                   
+                    <a href="https://gaganvisual.com/courses" class="card-link" target="_blank">Learn More →</a>
+                </div>
+                <div class="link-card" data-image="portfolio" data-title="Portfolio">
+                    <h3>Portfolio
+                        <button class="share-dots-btn" data-title="Portfolio"><img src="assets/three-dots.svg" alt="Share"></button>
+                    </h3>
+                    <p>View my latest design work and creative projects.</p>
+                    <div class="tags">
+                        <span class="tag">Projects</span>
+                        <span class="tag">Portfolio</span>
+                        <span class="tag tag-updated">Updated</span>
+                    </div>
+                    <img src="assets/portfolio-bg.jpg" alt="Portfolio" class="card-image">
+                    <a href="https://gaganpratap.vercel.app/"  class="card-link" target="_blank">View Portfolio →</a>
+                </div>
+                <div class="link-card" data-image="blog" data-title="Design Blog">
+                    <h3>Design Blog
+                        <button class="share-dots-btn" data-title="Design Blog"><img src="assets/three-dots.svg" alt="Share"></button>
+                    </h3>
+                    <p>Read my thoughts and insights about design, creativity, and career growth.</p>
+                    <div class="tags">
+                        <span class="tag">Blog</span>
+                        <span class="tag">Articles</span>
+                    </div>
+                    <img src="assets/blog-bg.jpg" alt="Blog" class="card-image">
+                    <a href="https://gaganvisual.com/blog" class="card-link" target="_blank">Read Blog →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Share Overlay -->
+    <div class="share-overlay" id="shareOverlay">
+        <div class="share-popup">
+            <button class="close-btn">&times;</button>
+            <h3>Share link</h3>
+            <div class="share-preview">
+                <div class="share-preview-content">
+                    <div class="share-preview-header">
+                        <div class="preview-image-container">
+                            <img class="share-preview-image" alt="Preview">
+                        </div>
+                        <h4 class="share-preview-title"></h4>
+                    </div>
+                    <div class="share-preview-link">
+                        <img src="assets/three-dots.svg" alt="Link" class="share-platform-icon">
+                        <div class="share-url"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-options">
+                <a href="#" class="share-option" id="copyLink">
+                    <img src="assets/copy.svg" alt="Copy" class="share-icon">
+                    <span>Copy</span>
+                </a>
+                <a href="#" class="share-option" id="shareX" target="_blank">
+                    <img src="assets/x.svg" alt="X" class="share-icon">
+                    <span>X</span>
+                </a>
+                <a href="#" class="share-option" id="shareFacebook" target="_blank">
+                    <img src="assets/facebook.svg" alt="Facebook" class="share-icon">
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="share-option" id="shareWhatsApp" target="_blank">
+                    <img src="assets/whatsapp.svg" alt="WhatsApp" class="share-icon">
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#" class="share-option" id="shareLinkedIn" target="_blank">
+                    <img src="assets/linkedin-share.svg" alt="LinkedIn" class="share-icon">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="share-option" id="shareMessenger" target="_blank">
+                    <img src="assets/messenger.svg" alt="Messenger" class="share-icon">
+                    <span>Messenger</span>
+                </a>
+                <a href="#" class="share-option" id="shareSnap" target="_blank">
+                    <img src="assets/snapchat.svg" alt="Snapchat" class="share-icon">
+                    <span>Snap</span>
+                </a>
+                <a href="#" class="share-option" id="shareEmail" target="_blank">
+                    <img src="assets/mail.svg" alt="Email" class="share-icon">
+                    <span>Email</span>
+                </a>
+                <a href="#" class="share-option" id="shareMore">
+                    <img src="assets/more.svg" alt="More" class="share-icon">
+                    <span>More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
